@@ -29,6 +29,25 @@ const questions = () => {
                     return false;
                 }
             }
+        },
+        {
+            type: 'confirm',
+            name: 'tableOfContentsConfirm',
+            message: 'would you like to include a table of contents? (Optional)',
+            default: true
+        },
+        {
+            type: 'checkbox',
+            name: 'tableOfContents',
+            message: 'Provide some information about yourself:',
+            choices: [ 'installation', 'Usage', 'Credits', 'Lisence' ]
+            when: ({ tableOfContentsConfirm }) => {
+                if (tableOfContentsConfirm) {
+                return true;
+                } else {
+                return false;
+                }
+            }
         }
 
     ])
