@@ -17,90 +17,113 @@ const writeToFile = (fileData) => {
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+const renderLicenseBadge = (license) => {}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+const renderLicenseLink = (license) => {}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+const renderLicenseSection = (license) => {}
 
 const renderTableOfContents = (hasTableOfContents, items) => {
   if(hasTableOfContents) {
-    return `## Table of Contents
-
-            ${items.map(item => 
-              `* [${item}](#${item.toLowerCase()})`)
-                .join(`
-            `)}}
-            `
-          }
+    return`
+  ## Table of Contents
+  ${items.map(item => 
+  `[${item}](#${item.toLowerCase()})\n`)
+  .join(`
+  `)}
+  `
+} else {
+  return ''
+}
 
 }
 
 const renderInstallation = (hasInstallation, installation) => {
   if (hasInstallation) {
-    return `## Installation
+    return `
+  ## Installation
 
             ${installation}
     `
+  } else {
+    return ''
   }
 }
 
 const renderUsage = (hasUsage, usage) => {
   if (hasUsage) {
-    return `## Usage
-    ![demo of Readme Generator](demo.gif)
+    return `
+  ## Usage
+  ![demo of Readme Generator](demo.gif)
 
             ${usage}
     `
+  } else {
+    return ''
   }
 }
 
 const renderCredits = (hasCredits, credits) => {
   if (hasCredits) {
-    return `## Credits
+    return `
+  ## Credits
     
             ${credits}
     `
+  } else {
+    return ''
   }
 }
 
 const renderLicense = (hasLicense, license) => {
   if (hasLicense) {
-    return `## Licensing
+    return `
+  ## Licensing
     
             ${license}
     `
+  } else {
+    return ''
   }
 }
 
 const renderContributers = (hasContributers, contributers) => {
   if (hasContributers) {
-    return `## Contributers
+    return `
+  ## Contributers
     
             ${contributers}
     `
+  } else {
+    return ''
   }
 }
 
 const renderTests = (hasTests, tests) => {
   if (hasTests) {
-    return `## Testing
+    return `
+  ## Testing
     
             ${tests}
     `
+  } else {
+    return ''
   }
 }
 
 const renderQuestions = (hasQuestions, questions) => {
   if (hasQuestions) {
-    return `## Frequently Askes Questions
+    return `
+  ## Frequently Askes Questions
     
             ${questions}
     `
+  } else {
+    return ''
   }
 }
 
