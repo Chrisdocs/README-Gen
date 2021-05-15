@@ -1,4 +1,5 @@
 const fs = require('fs');
+const toc = require('markdown-toc');
 const { resolve } = require('path');
 // TODO: Create a function to write README file
 
@@ -28,14 +29,14 @@ function renderLicenseSection(license) {}
 
 const renderTableOfContents = (hasTableOfContents, items) => {
   if(hasTableOfContents) {
-    return `##Table of contents
+    return `## Table of Contents
 
             ${items.map(item => 
               `* [${item}](#${item.toLowerCase()})`)
                 .join(`
-            `)}
+            `)}}
             `
-  }
+          }
 
 }
 
@@ -109,6 +110,7 @@ function generateMarkdown(data) {
   ## ${data.title}
   ## Description
     ${data.description}
+
   ${renderTableOfContents(
     data.tableOfContentsConfirm, 
     data.tableOfContents
