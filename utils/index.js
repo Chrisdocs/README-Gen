@@ -5,7 +5,7 @@ const { resolve } = require('path');
 
 const writeToFile = (fileData) => {
   console.log("writeToFIle was invoked");
-      fs.writeFile('README.md', fileData, err => {
+      fs.writeFile('./dist/README.md', fileData, err => {
         console.log("DOES THIS HIT AT ALL?")
         if (err) {
           console.log('you had an error:', err);
@@ -52,6 +52,7 @@ const renderInstallation = (hasInstallation, installation) => {
 const renderUsage = (hasUsage, usage) => {
   if (hasUsage) {
     return `## Usage
+    ![demo of Readme Generator](demo.gif)
 
             ${usage}
     `
@@ -107,7 +108,7 @@ const renderQuestions = (hasQuestions, questions) => {
 function generateMarkdown(data) {
   console.log('this is the data: ', data);
   return `
-  ## ${data.title}
+  # ${data.title}
   ## Description
     ${data.description}
 

@@ -118,7 +118,7 @@ const questions = () => {
             type: 'checkbox',
             name: 'license',
             message: 'Enter your licensing information',
-            choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+            choices: ['GNU AGPLv3', ' GNU GPLv3', ' GNU LGPLv3', ' Mozilla Public License 2.0', ' Apache License 2.0', ' MIT License', ' Boost Software License 1.0', ' The Unlicense'],
             when: ({licenseConfirm}) => {
                 if (licenseConfirm) {
                     return true;
@@ -166,13 +166,13 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'questionsConfirm',
-            message: 'Would you like to provide a frequently asked questions section? (optional)',
+            message: 'Would you like to provide a section for questions? (optional)',
             default: false
         },
         {
             type: 'input',
             name: 'questions',
-            message: 'Enter questions and answers',
+            message: 'Enter questions sections information',
             when: ({questionsConfirm}) => {
                 if (questionsConfirm) {
                     return true;
