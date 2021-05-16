@@ -92,6 +92,24 @@ const questions = () => {
         },
         {
             type: 'confirm',
+            name: 'featuresConfirm',
+            message: 'Would you like to provide a Features section?',
+            default: false
+        },
+        {
+            type: 'input',
+            name: 'features',
+            message: 'Enter your features',
+            when: ({featuresConfirm}) => {
+                if (featuresConfirm) {
+                    return true;
+                } else {
+                    return false;
+                };
+            }
+        },
+        {
+            type: 'confirm',
             name: 'creditsConfirm',
             message: 'Would you like to provide Credits section? (optional)',
             default: false
@@ -115,10 +133,10 @@ const questions = () => {
             default: false
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: 'Enter your licensing information',
-            choices: ['GNU AGPLv3', ' GNU GPLv3', ' GNU LGPLv3', ' Mozilla Public License 2.0', ' Apache License 2.0', ' MIT License', ' Boost Software License 1.0', ' The Unlicense'],
+            choices: ['GNU_AGPLv3', ' GNU_GPLv3', 'GNU LGPLv3', 'Mozilla_Public_License_2.0', 'Apache_License_2.0', 'MIT', 'Boost_Software License_1.0', 'The_Unlicense'],
             when: ({licenseConfirm}) => {
                 if (licenseConfirm) {
                     return true;
@@ -154,7 +172,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'tests',
-            message: 'Enter installations instructions',
+            message: 'Enter your testing information',
             when: ({testsConfirm}) => {
                 if (testsConfirm) {
                     return true;
@@ -168,6 +186,30 @@ const questions = () => {
             name: 'questionsConfirm',
             message: 'Would you like to provide a section for questions? (optional)',
             default: false
+        },
+        {
+            type: 'input',
+            name: 'questionsGitUser',
+            message: 'Enter your GitHub user name',
+            when: ({questionsConfirm}) => {
+                if (questionsConfirm) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter your contact email',
+            when: ({questionsConfirm}) => {
+                if (questionsConfirm) {
+                    return true
+                } else {
+                    return ''
+                }
+            }
         },
         {
             type: 'input',

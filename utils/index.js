@@ -4,9 +4,7 @@ const { resolve } = require('path');
 // TODO: Create a function to write README file
 
 const writeToFile = (fileData) => {
-  console.log("writeToFIle was invoked");
       fs.writeFile('./dist/README.md', fileData, err => {
-        console.log("DOES THIS HIT AT ALL?")
         if (err) {
           console.log('you had an error:', err);
         } else {
@@ -17,15 +15,23 @@ const writeToFile = (fileData) => {
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-const renderLicenseBadge = (license) => {}
+const renderLicenseBadge = (licenseConfirm, data) => {
+  if (licenseConfirm) {
+    return `
+[![Generic badge](https://img.shields.io/badge/License-${data}-green)](https://shields.io/)
+    `
+  } else {
+    return '';
+  };
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-const renderLicenseLink = (license) => {}
+const renderLicenseLink = (license) => {};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-const renderLicenseSection = (license) => {}
+const renderLicenseSection = (license) => {};
 
 const renderTableOfContents = (hasTableOfContents, items) => {
   if(hasTableOfContents) {
@@ -67,6 +73,18 @@ const renderUsage = (hasUsage, usage) => {
   }
 }
 
+const renderFeatures = (featuresConfirm, features) => {
+  if (featuresConfirm) {
+    return `
+  ## Features
+
+            ${features}
+    `
+  } else {
+    return ''
+  }
+}
+
 const renderCredits = (hasCredits, credits) => {
   if (hasCredits) {
     return `
@@ -82,9 +100,9 @@ const renderCredits = (hasCredits, credits) => {
 const renderLicense = (hasLicense, license) => {
   if (hasLicense) {
     return `
-  ## Licensing
+  ## Licensing Information
     
-            ${license}
+  [${license}](https://google.com/search?q=${license}_license)
     `
   } else {
     return ''
@@ -118,8 +136,6 @@ const renderTests = (hasTests, tests) => {
 const renderQuestions = (hasQuestions, questions) => {
   if (hasQuestions) {
     return `
-  ## Frequently Askes Questions
-    
             ${questions}
     `
   } else {
@@ -127,12 +143,34 @@ const renderQuestions = (hasQuestions, questions) => {
   }
 }
 
+const renderGitUser = (questionsConfirm, questionsGitUser) => {
+  if (questionsConfirm) {
+    return `
+  ## Questions/ Contact
+  GitHub: [${questionsGitUser}](http://github.com/${questionsGitUser})
+    `
+  } else {
+    return ''
+  }
+}
+
+const renderEmail = (questionConfirm, emailInput) => {
+  if (questionConfirm) {
+    return `
+  ### For questions, please contact me!
+  Email: ${emailInput}
+    `
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   console.log('this is the data: ', data);
   return `
-  # ${data.title}
-  ## Description
+# 📘 ${data.title}${renderLicenseBadge(
+  data.licenseConfirm, 
+  data.license
+  )}
     ${data.description}
 
   ${renderTableOfContents(
@@ -147,13 +185,13 @@ function generateMarkdown(data) {
     data.usageConfirm,
     data.usage
     )}
+  ${renderFeatures(
+    data.featuresConfirm,
+    data.features
+  )}
   ${renderCredits(
     data.creditsConfirm,
     data.credits
-    )}
-  ${renderLicense(
-    data.licenseConfirm,
-    data.license
     )}
   ${renderContributers(
     data.contributingConfirm,
@@ -163,10 +201,22 @@ function generateMarkdown(data) {
     data.testsConfirm,
     data.tests
   )}
+  ${renderGitUser(
+    data.questionsConfirm,
+    data.questionsGitUser
+  )}
+  ${renderEmail(
+    data.questionsConfirm,
+    data.email
+  )}
   ${renderQuestions(
     data.questionsConfirm,
     data.questions
   )}
+  ${renderLicense(
+    data.licenseConfirm, 
+    data.license
+    )}
 `;
 };
 
