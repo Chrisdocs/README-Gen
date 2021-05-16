@@ -64,7 +64,7 @@ const renderUsage = (hasUsage, usage) => {
   if (hasUsage) {
     return `
   ## Usage
-  ![demo of Readme Generator](./assets/demo.gif)
+  ![demo of Readme Generator](./../assets/demo.gif)
 
             ${usage}
     `

@@ -1,8 +1,8 @@
 
-# 📘 t
+# 📘 y
 [![Generic badge](https://img.shields.io/badge/License-GNU_AGPLv3-green)](https://shields.io/)
     
-    t
+    y
 
   
   ## Table of Contents
@@ -12,17 +12,26 @@
 
   [Features](#features)
 
+  [Credits](#credits)
+
+  [Contributers](#contributers)
+
+  [Testing](#testing)
+
+  [Questions](#questions)
+
+  [Licensing](#licensing)
+
   
   
   ## Installation
 
-            t
+            y
     
   
   ## Usage
+  ![demo of Readme Generator](./../assets/demo.gif)
 
-  [![usage video](demo.gif)](https://drive.google.com/file/d/1T7yi-22EWmZUJU_AVEAH5pNlVdNatvC0/preview "Click Me!")
-  
             y
     
   
@@ -43,19 +52,11 @@
   
   ## Testing
     
-            y
+            
     
   
-  ## Questions
-  GitHub: [y](http://github.com/y)
-    
+  undefined
   
-  ### For questions, please contact me!
-  Email: y
-    
-  
-            y
-    
   
   ## Licensing
     
