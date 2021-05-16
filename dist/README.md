@@ -1,8 +1,8 @@
 
-# 📘 project name
-[![Generic badge](https://img.shields.io/badge/License-MIT-green)](https://shields.io/)
+# 📘 t
+[![Generic badge](https://img.shields.io/badge/License-GNU_AGPLv3-green)](https://shields.io/)
     
-    project description
+    t
 
   
   ## Table of Contents
@@ -10,61 +10,53 @@
 
   [Usage](#usage)
 
-  [Credits](#credits)
-
-  [Lisence](#lisence)
-
-  [Contributing](#contributing)
-
-  [Tests](#tests)
-
-  [Questions](#questions)
+  [Features](#features)
 
   
   
   ## Installation
 
-            instructions
+            t
     
   
   ## Usage
-  ![demo of Readme Generator](demo.gif)
+  ![demo of Readme Generator](./assets/demo.gif)
 
-            usage
+            y
     
   
   ## Features
 
-            features
+            y
     
   
   ## Credits
     
-            credits
+            y
     
   
   ## Contributers
     
-            contributers
+            y
     
   
   ## Testing
     
-            tests
+            y
     
   
-  ## Questions/ Contact
-  GitHub: [username](http://github.com/username)
+  ## Questions
+  GitHub: [y](http://github.com/y)
     
   
   ### For questions, please contact me!
-  Email: email@email.com
+  Email: y
     
   
-            questions and answers
+            y
     
   
-  ## Licensing Information
+  ## Licensing
     
-  [MIT](https://google.com/search?q=MIT_license)
+  [GNU_AGPLv3](https://google.com/search?q=GNU_AGPLv3_license)
     

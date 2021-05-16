@@ -45,7 +45,7 @@ const questions = () => {
             type: 'checkbox',
             name: 'tableOfContents',
             message: 'Table of Contents:',
-            choices: [ 'Installation', 'Usage', 'Credits', 'Lisence', 'Contributing', 'Tests', 'Questions' ],
+            choices: [ 'Installation', 'Usage', 'Features', 'Credits', 'Contributers', 'Testing', 'Questions', 'Licensing'],
             when: ({ tableOfContentsConfirm }) => {
                 if (tableOfContentsConfirm) {
                 return true;

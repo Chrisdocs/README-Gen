@@ -64,7 +64,7 @@ const renderUsage = (hasUsage, usage) => {
   if (hasUsage) {
     return `
   ## Usage
-  ![demo of Readme Generator](demo.gif)
+  ![demo of Readme Generator](./assets/demo.gif)
 
             ${usage}
     `
@@ -97,22 +97,10 @@ const renderCredits = (hasCredits, credits) => {
   }
 }
 
-const renderLicense = (hasLicense, license) => {
-  if (hasLicense) {
-    return `
-  ## License
-    
-  [${license}](https://google.com/search?q=${license}_license)
-    `
-  } else {
-    return ''
-  }
-}
-
 const renderContributers = (hasContributers, contributers) => {
   if (hasContributers) {
     return `
-  ## Contributing
+  ## Contributers
     
             ${contributers}
     `
@@ -124,7 +112,7 @@ const renderContributers = (hasContributers, contributers) => {
 const renderTests = (hasTests, tests) => {
   if (hasTests) {
     return `
-  ## Tests
+  ## Testing
     
             ${tests}
     `
@@ -160,6 +148,18 @@ const renderEmail = (questionConfirm, emailInput) => {
   ### For questions, please contact me!
   Email: ${emailInput}
     `
+  }
+}
+
+const renderLicense = (hasLicense, license) => {
+  if (hasLicense) {
+    return `
+  ## Licensing
+    
+  [${license}](https://google.com/search?q=${license}_license)
+    `
+  } else {
+    return ''
   }
 }
 
