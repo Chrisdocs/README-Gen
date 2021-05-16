@@ -20,8 +20,9 @@
     
   
   ## Usage
-  ![demo of Readme Generator](./assets/demo.gif)
 
+  [![usage video](demo.gif)](https://drive.google.com/file/d/1T7yi-22EWmZUJU_AVEAH5pNlVdNatvC0/preview "Click Me!")
+  
             y
     
   
