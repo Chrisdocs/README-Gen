@@ -26,7 +26,7 @@
   
   ## Installation
 
-            To use the app, download the files to your local machine.  you must have node and inquirer npms installed for the application to function.
+    To use the app, download the files to your local machine.  you must have node and inquirer npms installed for the application to function.
     
   
   ## Usage

@@ -53,7 +53,7 @@ const renderInstallation = (hasInstallation, installation) => {
     return `
   ## Installation
 
-            ${installation}
+  ${installation}
     `
   } else {
     return ''
