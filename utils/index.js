@@ -100,7 +100,7 @@ const renderCredits = (hasCredits, credits) => {
 const renderLicense = (hasLicense, license) => {
   if (hasLicense) {
     return `
-  ## Licensing Information
+  ## License
     
   [${license}](https://google.com/search?q=${license}_license)
     `
@@ -112,7 +112,7 @@ const renderLicense = (hasLicense, license) => {
 const renderContributers = (hasContributers, contributers) => {
   if (hasContributers) {
     return `
-  ## Contributers
+  ## Contributing
     
             ${contributers}
     `
@@ -124,7 +124,7 @@ const renderContributers = (hasContributers, contributers) => {
 const renderTests = (hasTests, tests) => {
   if (hasTests) {
     return `
-  ## Testing
+  ## Tests
     
             ${tests}
     `
@@ -146,7 +146,7 @@ const renderQuestions = (hasQuestions, questions) => {
 const renderGitUser = (questionsConfirm, questionsGitUser) => {
   if (questionsConfirm) {
     return `
-  ## Questions/ Contact
+  ## Questions
   GitHub: [${questionsGitUser}](http://github.com/${questionsGitUser})
     `
   } else {

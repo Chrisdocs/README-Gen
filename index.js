@@ -12,7 +12,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'title',
-            message: 'Please enter a title for your project. (required)',
+            message: 'Please enter a title for your project. (required).',
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -25,7 +25,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'description',
-            message: 'Please enter a description for your project. (Required)',
+            message: 'Please enter a description for your project. (Required).',
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -38,7 +38,7 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'tableOfContentsConfirm',
-            message: 'would you like to include a table of contents? (Optional)',
+            message: 'would you like to include a table of contents? (Optional).',
             default: true
         },
         {
@@ -57,13 +57,13 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'installationConfirm',
-            message: 'Would you like to provide installation instructions? (optional)',
+            message: 'Would you like to provide installation instructions? (optional).',
             default: false
         },
         {
             type: 'input',
             name: 'installation',
-            message: 'Enter installations instructions',
+            message: 'Enter installations instructions.',
             when: ({installationConfirm}) => {
                 if (installationConfirm) {
                     return true;
@@ -75,13 +75,13 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'usageConfirm',
-            message: 'Would you like to provide a Usage section? (optional)',
+            message: 'Would you like to provide a Usage section? (optional).',
             default: false
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'Enter Usage instructions',
+            message: 'Enter Usage instructions.',
             when: ({usageConfirm}) => {
                 if (usageConfirm) {
                     return true;
@@ -111,13 +111,13 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'creditsConfirm',
-            message: 'Would you like to provide Credits section? (optional)',
+            message: 'Would you like to provide Credits section? (optional).',
             default: false
         },
         {
             type: 'input',
             name: 'credits',
-            message: 'Enter your Credits',
+            message: 'Enter your Credits.',
             when: ({creditsConfirm}) => {
                 if (creditsConfirm) {
                     return true;
@@ -129,13 +129,13 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'licenseConfirm',
-            message: 'Would you like to provide License section? (optional)',
+            message: 'Would you like to provide License section? (optional).',
             default: false
         },
         {
             type: 'list',
             name: 'license',
-            message: 'Enter your licensing information',
+            message: 'Enter your licensing information.',
             choices: ['GNU_AGPLv3', ' GNU_GPLv3', 'GNU LGPLv3', 'Mozilla_Public_License_2.0', 'Apache_License_2.0', 'MIT', 'Boost_Software License_1.0', 'The_Unlicense'],
             when: ({licenseConfirm}) => {
                 if (licenseConfirm) {
@@ -148,13 +148,13 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'contributingConfirm',
-            message: 'Would you like to provide information on contributers? (optional)',
+            message: 'Would you like to provide information on contributers? (optional).',
             default: false
         },
         {
             type: 'input',
             name: 'contributers',
-            message: 'Enter contributers',
+            message: 'Enter contributers.',
             when: ({contributingConfirm}) => {
                 if (contributingConfirm) {
                     return true;
@@ -166,13 +166,13 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'testsConfirm',
-            message: 'Would you like to provide informations pertaining to tests? (optional)',
+            message: 'Would you like to provide informations pertaining to tests? (optional).',
             default: false
         },
         {
             type: 'input',
             name: 'tests',
-            message: 'Enter your testing information',
+            message: 'Enter your testing information.',
             when: ({testsConfirm}) => {
                 if (testsConfirm) {
                     return true;
@@ -184,13 +184,13 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'questionsConfirm',
-            message: 'Would you like to provide a section for questions? (optional)',
+            message: 'Would you like to provide a section for questions? (optional).',
             default: false
         },
         {
             type: 'input',
             name: 'questionsGitUser',
-            message: 'Enter your GitHub user name',
+            message: 'Enter your GitHub user name.',
             when: ({questionsConfirm}) => {
                 if (questionsConfirm) {
                     return true;
@@ -202,7 +202,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'email',
-            message: 'Enter your contact email',
+            message: 'Enter your contact email.',
             when: ({questionsConfirm}) => {
                 if (questionsConfirm) {
                     return true
@@ -214,7 +214,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'questions',
-            message: 'Enter questions sections information',
+            message: 'Enter frequently asked questions and answers, or additional information.',
             when: ({questionsConfirm}) => {
                 if (questionsConfirm) {
                     return true;
