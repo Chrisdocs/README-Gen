@@ -30,7 +30,7 @@
     
   
   ## Usage
-  ![demo of Readme Generator](./../assets/demo.gif)
+  ![demo of Readme Generator](./assets/demo.gif)
 
             Execute the app through your terminal or command line using the command "node index".  Follow the prompts to genertate your readme.md file.
     
