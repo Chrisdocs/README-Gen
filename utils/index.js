@@ -66,7 +66,7 @@ const renderUsage = (hasUsage, usage) => {
   ## Usage
   ![demo of Readme Generator](./assets/demo.gif)
 
-            ${usage}
+  ${usage}
     `
   } else {
     return ''
@@ -78,7 +78,7 @@ const renderFeatures = (featuresConfirm, features) => {
     return `
   ## Features
 
-            ${features}
+  ${features}
     `
   } else {
     return ''
@@ -90,7 +90,7 @@ const renderCredits = (hasCredits, credits) => {
     return `
   ## Credits
     
-            ${credits}
+  ${credits}
     `
   } else {
     return ''
@@ -102,7 +102,7 @@ const renderContributers = (hasContributers, contributers) => {
     return `
   ## Contributers
     
-            ${contributers}
+  ${contributers}
     `
   } else {
     return ''
@@ -114,7 +114,7 @@ const renderTests = (hasTests, tests) => {
     return `
   ## Testing
     
-            ${tests}
+  ${tests}
     `
   } else {
     return ''
@@ -124,7 +124,7 @@ const renderTests = (hasTests, tests) => {
 const renderQuestions = (hasQuestions, questions) => {
   if (hasQuestions) {
     return `
-            ${questions}
+  ${questions}
     `
   } else {
     return ''

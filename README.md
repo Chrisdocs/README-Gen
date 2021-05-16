@@ -32,27 +32,27 @@
   ## Usage
   ![demo of Readme Generator](./assets/demo.gif)
 
-            Execute the app through your terminal or command line using the command "node index".  Follow the prompts to genertate your readme.md file.
+  Execute the app through your terminal or command line using the command "node index".  Follow the prompts to genertate your readme.md file.
     
   
   ## Features
 
-            This section would normally contain features of your app.  It is displayed here only as an example of functionality.
+  This section would normally contain features of your app.  It is displayed here only as an example of functionality.
     
   
   ## Credits
     
-            This is the credits section.  It is displayed here as an example.
+  This is the credits section.  It is displayed here as an example.
     
   
   ## Contributers
     
-            Chrisdocs
+  Chrisdocs
     
   
   ## Testing
     
-            You can provide testing information here!
+  You can provide testing information here!
     
   
   ## Questions
@@ -63,7 +63,7 @@
   Email: email@email.com
     
   
-            This section can be used for diaplying a Q&A for common questions!
+  This section can be used for diaplying a Q&A for common questions!
     
   
   ## Licensing
